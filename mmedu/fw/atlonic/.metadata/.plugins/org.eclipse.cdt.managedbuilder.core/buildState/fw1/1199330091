@@ -1,0 +1,13 @@
+#
+#Mon Jun 03 14:23:40 CEST 2019
+Debug/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f30x.o=1
+Drivers/STM32F3xx_HAL_Driver/Src/stm32f30x_gpio.c=1
+Drivers/STM32F3xx_HAL_Driver/Inc/stm32f30x.h=1
+Drivers/STM32F3xx_HAL_Driver/Inc/stm32f30x.cpp=1
+Debug/Drivers/STM32F3xx_HAL_Driver/Src/stm32f30x_gpio.o=1
+Drivers/STM32F3xx_HAL_Driver/Inc/stm32f30x_rcc.h=1
+Debug/fw1.elf=1
+Debug/fw1=1
+Debug/DOUT/DOUT.o=1
+DOUT/DOUT.cpp=1
+Drivers/STM32F3xx_HAL_Driver/Inc/stm32f30x_gpio.h=1

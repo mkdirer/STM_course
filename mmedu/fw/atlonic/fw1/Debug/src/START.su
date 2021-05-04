@@ -1,0 +1,6 @@
+START.cpp:19:1:START::START()	16	static
+START.cpp:24:1:START::~START()	16	static
+START.cpp:24:1:virtual START::~START()	16	static
+START.cpp:34:5:int main()	4	static
+START.cpp:43:1:void __static_initialization_and_destruction_0(int, int)	16	static
+START.cpp:43:1:cpp)	8	static

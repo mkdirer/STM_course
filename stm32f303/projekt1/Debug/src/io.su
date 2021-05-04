@@ -1,0 +1,4 @@
+io.c:9:6:OUT_DIG_Config	16	static
+io.c:31:6:IN_DIG_Config	16	static
+io.c:115:6:Set_Dout	16	static
+io.c:129:6:Reset_Dout	16	static

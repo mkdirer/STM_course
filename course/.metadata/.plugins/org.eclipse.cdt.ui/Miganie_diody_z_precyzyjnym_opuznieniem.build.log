@@ -1,0 +1,23 @@
+15:24:06 **** Incremental Build of configuration Debug for project Miganie_diody_z_precyzyjnym_opuznieniem ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Lukas\workspace\Miganie_diody_z_precyzyjnym_opuznieniem\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -I"C:/Users/Lukas/workspace/Miganie_diody_z_precyzyjnym_opuznieniem/StdPeriph_Driver/inc" -I"C:/Users/Lukas/workspace/Miganie_diody_z_precyzyjnym_opuznieniem/inc" -I"C:/Users/Lukas/workspace/Miganie_diody_z_precyzyjnym_opuznieniem/CMSIS/device" -I"C:/Users/Lukas/workspace/Miganie_diody_z_precyzyjnym_opuznieniem/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: Miganie_diody_z_precyzyjnym_opuznieniem.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -T"C:/Users/Lukas/workspace/Miganie_diody_z_precyzyjnym_opuznieniem/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Miganie_diody_z_precyzyjnym_opuznieniem.elf" @"objects.list"   -lm
+Finished building target: Miganie_diody_z_precyzyjnym_opuznieniem.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Miganie_diody_z_precyzyjnym_opuznieniem.elf" "Miganie_diody_z_precyzyjnym_opuznieniem.bin"
+arm-none-eabi-size "Miganie_diody_z_precyzyjnym_opuznieniem.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2924	   1104	    324	   4352	   1100	Miganie_diody_z_precyzyjnym_opuznieniem.elf
+ 
+
+15:24:07 Build Finished (took 1s.455ms)
+

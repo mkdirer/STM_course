@@ -1,0 +1,26 @@
+14:38:34 **** Incremental Build of configuration Debug for project pomiar_temp ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32F303xE -I../Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c_ex.o ..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c_ex.c 
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32F303xE -I../Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim.o ..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim.c 
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32F303xE -I../Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o ..\Src\main.c 
+..\Src\main.c: In function 'main':
+..\Src\main.c:113:3: warning: implicit declaration of function 'MX_NVIC_Init' [-Wimplicit-function-declaration]
+   MX_NVIC_Init();
+   ^~~~~~~~~~~~
+..\Src\main.c: At top level:
+..\Src\main.c:186:13: warning: conflicting types for 'MX_NVIC_Init'
+ static void MX_NVIC_Init(void)
+             ^~~~~~~~~~~~
+..\Src\main.c:186:13: error: static declaration of 'MX_NVIC_Init' follows non-static declaration
+..\Src\main.c:113:3: note: previous implicit declaration of 'MX_NVIC_Init' was here
+   MX_NVIC_Init();
+   ^~~~~~~~~~~~
+..\Src\main.c:64:13: warning: 'MX_DMA_Init' declared 'static' but never defined [-Wunused-function]
+ static void MX_DMA_Init(void);
+             ^~~~~~~~~~~
+..\Src\main.c:186:13: warning: 'MX_NVIC_Init' defined but not used [-Wunused-function]
+ static void MX_NVIC_Init(void)
+             ^~~~~~~~~~~~
+
+14:38:36 Build Finished (took 2s.265ms)
+

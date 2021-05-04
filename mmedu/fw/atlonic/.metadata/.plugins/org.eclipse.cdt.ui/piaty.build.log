@@ -1,0 +1,24 @@
+14:40:54 **** Incremental Build of configuration Debug for project piaty ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_FULL_LL_DRIVER -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DSTM32F303xE -I../Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o ..\Src\main.c 
+..\Src\main.c: In function 'main':
+..\Src\main.c:107:30: error: 'unit32_t' undeclared (first use in this function)
+    if (LL_EXTI_ReadFlag_0_31(unit32_t x2)) {
+                              ^~~~~~~~
+..\Src\main.c:107:30: note: each undeclared identifier is reported only once for each function it appears in
+..\Src\main.c:107:39: error: expected ')' before 'x2'
+    if (LL_EXTI_ReadFlag_0_31(unit32_t x2)) {
+                                       ^~
+..\Src\main.c:101:3: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+   while (1)
+   ^~~~~
+..\Src\main.c:112:4: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+    LL_GPIO_ResetOutputPin(y1_GPIO_Port,y1_Pin);
+    ^~~~~~~~~~~~~~~~~~~~~~
+..\Src\main.c: At top level:
+..\Src\main.c:120:1: error: expected identifier or '(' before 'else'
+ else{
+ ^~~~
+
+14:40:55 Build Finished (took 729ms)
+

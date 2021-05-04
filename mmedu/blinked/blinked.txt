@@ -1,0 +1,42 @@
+Configuration	blinked
+STM32CubeMX 	4.24.0
+Date	06/04/2019
+MCU	STM32F303RDTx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+21	PA5	GPIO_Output	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : blinked
+Project Folder : C:\Users\Ja\Desktop\mmedu\blinked
+Toolchain / IDE : MDK-ARM V5
+Firmware Package Name and Version : STM32Cube FW_F3 V1.9.1
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+

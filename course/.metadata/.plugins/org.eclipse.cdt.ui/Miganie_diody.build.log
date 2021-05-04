@@ -1,0 +1,6 @@
+13:01:25 **** Incremental Build of configuration Debug for project Miganie_diody ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+
+13:01:25 Build Finished (took 466ms)
+

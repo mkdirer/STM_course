@@ -1,0 +1,14 @@
+14:23:39 **** Incremental Build of configuration Debug for project fw1 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-g++ -c ..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f30x.cpp -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu++98 -DSTM32F303xE -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../src -IC:\Users\Ja\Desktop\mmedu\fw\atlonic\fw1\DOUT -O0 -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -g -fstack-usage -Wall -fno-threadsafe-statics -o Drivers\STM32F3xx_HAL_Driver\Inc\stm32f30x.o 
+arm-atollic-eabi-gcc -c ..\Drivers\STM32F3xx_HAL_Driver\Src\stm32f30x_gpio.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F303xE -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../src -IC:\Users\Ja\Desktop\mmedu\fw\atlonic\fw1\DOUT -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o Drivers\STM32F3xx_HAL_Driver\Src\stm32f30x_gpio.o 
+arm-atollic-eabi-g++ -c ..\DOUT\DOUT.cpp -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu++98 -DSTM32F303xE -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../src -IC:\Users\Ja\Desktop\mmedu\fw\atlonic\fw1\DOUT -O0 -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -g -fstack-usage -Wall -fno-threadsafe-statics -o DOUT\DOUT.o 
+In file included from ..\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f30x.cpp:8:0:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f30x.h:250:63: fatal error: system_stm32f30x.h: No such file or directory
+ #include "system_stm32f30x.h"    /* STM32F30x System Header */
+                                                               ^
+compilation terminated.
+Info: Parallel threads used: 3
+
+14:23:40 Build Finished (took 906ms)
+

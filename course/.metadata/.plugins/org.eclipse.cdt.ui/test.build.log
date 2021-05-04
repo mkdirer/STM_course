@@ -1,0 +1,9 @@
+13:44:42 **** Incremental Build of configuration Debug for project test ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/Ac6/SystemWorkbench/jre/bin/server;C:/Ac6/SystemWorkbench/jre/bin;C:/Ac6/SystemWorkbench/jre/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Users\Lukas\AppData\Local\Microsoft\WindowsApps;;C:\Ac6\SystemWorkbench]
+
+13:44:42 Build Finished (took 80ms)
+

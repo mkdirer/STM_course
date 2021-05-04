@@ -1,0 +1,6 @@
+core_cm4.h:1615:26:NVIC_GetPriorityGrouping	0	static
+stm32f3xx_ll_bus.h:303:22:LL_AHB1_GRP1_EnableClock	8	static
+core_cm4.h:1745:26:NVIC_EncodePriority.constprop	0	static
+main.c:144:6:SystemClock_Config	8	static
+main.c:71:5:main	40	static
+main.c:266:6:_Error_Handler	0	static

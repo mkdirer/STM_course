@@ -1,0 +1,6 @@
+13:38:45 **** Incremental Build of configuration Debug for project 4.3_STM32_Kurs ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+
+13:38:45 Build Finished (took 301ms)
+

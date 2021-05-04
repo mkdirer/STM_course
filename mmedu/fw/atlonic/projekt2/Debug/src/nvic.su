@@ -1,0 +1,6 @@
+core_cm4.h:1577:22:NVIC_SetPriority	16	static
+core_cm4.h:1704:26:SysTick_Config	16	static
+nvic.c:13:6:NVIC_Config	16	static
+nvic.c:48:6:SysTick_Handler	4	static
+nvic.c:60:6:TIM3_IRQHandler	8	static
+nvic.c:69:6:TIM4_IRQHandler	8	static

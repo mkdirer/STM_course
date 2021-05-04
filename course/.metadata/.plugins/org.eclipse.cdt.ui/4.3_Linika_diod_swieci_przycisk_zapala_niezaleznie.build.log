@@ -1,0 +1,6 @@
+13:45:35 **** Incremental Build of configuration Debug for project 4.3_Linika_diod_swieci_przycisk_zapala_niezaleznie ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+
+13:45:35 Build Finished (took 313ms)
+

@@ -1,0 +1,6 @@
+15:59:38 **** Incremental Build of configuration Debug for project 4.1_Zmiana_kierunku_diod_po_nacisnieciu_wykorzystanie_przerwan ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+
+15:59:38 Build Finished (took 380ms)
+

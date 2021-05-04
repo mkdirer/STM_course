@@ -1,0 +1,6 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:pierwszy.elf,org.eclipse.launchbar.core.descriptorType.default\:cubemx.elf,org.eclipse.launchbar.core.descriptorType.default\:projekt1.elf,org.eclipse.launchbar.core.descriptorType.default\:czwarty.elf,org.eclipse.launchbar.core.descriptorType.default\:szosty.elf,org.eclipse.launchbar.core.descriptorType.default\:miganie_toggle.elf,org.eclipse.launchbar.core.descriptorType.default\:przerwania.elf,org.eclipse.launchbar.core.descriptorType.default\:przerwania2.elf,org.eclipse.launchbar.core.descriptorType.default\:pomiar_temp.elf,org.eclipse.launchbar.core.descriptorType.default\:przer454.elf,org.eclipse.launchbar.core.descriptorType.default\:03_Timer_interrupt.elf
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:cubemx.elf/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:cubemx.elf/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

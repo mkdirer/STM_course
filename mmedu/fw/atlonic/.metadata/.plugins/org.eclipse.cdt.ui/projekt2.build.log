@@ -1,0 +1,30 @@
+10:41:02 **** Incremental Build of configuration Debug for project projekt2 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\src\main.c -mthumb -mcpu=cortex-m4 -std=gnu11 -DSTM32F30 -DSTM32F3 -DSTM32F303RDTx -DSTM32 -DDEBUG -DUSE_STDPERIPH_DRIVER -DSTM32F303xE -IC:/Users/Ja/Desktop/mmedu/fw/atlonic/projekt2/inc -IC:/Users/Ja/Desktop/mmedu/fw/atlonic/projekt2/CMSIS/core -IC:/Users/Ja/Desktop/mmedu/fw/atlonic/projekt2/CMSIS/device -IC:/Users/Ja/Desktop/mmedu/fw/atlonic/projekt2/StdPeriph_Driver/inc -O0 -ffunction-sections -g3 -fstack-usage -Wall -specs=nano.specs -o src\main.o 
+..\src\main.c: In function 'RCC_Conf':
+..\src\main.c:33:19: warning: value computed is not used [-Wunused-value]
+  HSEStartUpStatus == RCC_WaitForHSEStartUp();
+  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\main.c:35:27: error: 'FLASH_PrefetchBuffer_Enable' undeclared (first use in this function)
+   FLASH_PrefetchBufferCmd(FLASH_PrefetchBuffer_Enable);
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\main.c:35:27: note: each undeclared identifier is reported only once for each function it appears in
+..\src\main.c:40:17: error: 'RCC_PLLSource_HSE_Div1' undeclared (first use in this function)
+   RCC_PLLConfig(RCC_PLLSource_HSE_Div1, RCC_PLLMul_9);
+                 ^~~~~~~~~~~~~~~~~~~~~~
+..\src\main.c:47:25: error: 'RCC_APB2Periph_GPIOB' undeclared (first use in this function)
+  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB | RCC_APB2Periph_SPI1, ENABLE);
+                         ^~~~~~~~~~~~~~~~~~~~
+..\src\main.c: In function 'GPIO_Conf':
+..\src\main.c:53:2: warning: implicit declaration of function 'GPIO_PinRemapConfig' [-Wimplicit-function-declaration]
+  GPIO_PinRemapConfig(GPIO_FullRemap_TIM3, ENABLE);
+  ^~~~~~~~~~~~~~~~~~~
+..\src\main.c:53:22: error: 'GPIO_FullRemap_TIM3' undeclared (first use in this function)
+  GPIO_PinRemapConfig(GPIO_FullRemap_TIM3, ENABLE);
+                      ^~~~~~~~~~~~~~~~~~~
+..\src\main.c:55:33: error: 'GPIO_Mode_AF_PP' undeclared (first use in this function)
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
+                                 ^~~~~~~~~~~~~~~
+
+10:41:02 Build Finished (took 805ms)
+

@@ -1,0 +1,21 @@
+/*
+ * DOUT.cpp
+ *
+ *  Created on: 03.06.2019
+ *      Author: Ja
+ */
+
+#include "DOUT.h"
+
+DOUT::DOUT() {
+	// TODO Auto-generated constructor stub
+
+}
+
+DOUT::~DOUT() {
+	// TODO Auto-generated destructor stub
+}
+
+void DOUT::INIT(void) {
+
+}

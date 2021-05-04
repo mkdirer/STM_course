@@ -1,0 +1,41 @@
+09:58:41 **** Incremental Build of configuration Debug for project pierwszy ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\src\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F303xE -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../src -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o src\main.o 
+..\src\main.c: In function 'main':
+..\src\main.c:53:5: error: unknown type name 'GPIO_InitTypeDef'
+     GPIO_InitTypeDef gpio; // obiekt gpio z konfiguracja portow GPIO
+     ^~~~~~~~~~~~~~~~
+..\src\main.c:55:5: warning: implicit declaration of function 'RCC_APB2PeriphClockCmd' [-Wimplicit-function-declaration]
+     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE); // uruchomienie zegara modulu GPIO
+     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\main.c:55:28: error: 'RCC_APB2Periph_GPIOA' undeclared (first use in this function)
+     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE); // uruchomienie zegara modulu GPIO
+                            ^~~~~~~~~~~~~~~~~~~~
+..\src\main.c:55:28: note: each undeclared identifier is reported only once for each function it appears in
+..\src\main.c:57:5: warning: implicit declaration of function 'GPIO_StructInit' [-Wimplicit-function-declaration]
+     GPIO_StructInit(&gpio); // domyslna konfiguracja
+     ^~~~~~~~~~~~~~~
+..\src\main.c:58:9: error: request for member 'GPIO_Pin' in something not a structure or union
+     gpio.GPIO_Pin = GPIO_Pin_5; // konfigurujemy pin 5
+         ^
+..\src\main.c:58:21: error: 'GPIO_Pin_5' undeclared (first use in this function)
+     gpio.GPIO_Pin = GPIO_Pin_5; // konfigurujemy pin 5
+                     ^~~~~~~~~~
+..\src\main.c:59:9: error: request for member 'GPIO_Mode' in something not a structure or union
+     gpio.GPIO_Mode = GPIO_Mode_Out_PP; // jako wyjscie
+         ^
+..\src\main.c:59:22: error: 'GPIO_Mode_Out_PP' undeclared (first use in this function)
+     gpio.GPIO_Mode = GPIO_Mode_Out_PP; // jako wyjscie
+                      ^~~~~~~~~~~~~~~~
+..\src\main.c:60:5: warning: implicit declaration of function 'GPIO_Init' [-Wimplicit-function-declaration]
+     GPIO_Init(GPIOA, &gpio); // inicjalizacja modulu GPIOA
+     ^~~~~~~~~
+..\src\main.c:63:9: warning: implicit declaration of function 'GPIO_SetBits' [-Wimplicit-function-declaration]
+         GPIO_SetBits(GPIOA, GPIO_Pin_5); // zapalenie diody
+         ^~~~~~~~~~~~
+..\src\main.c:65:9: warning: implicit declaration of function 'GPIO_ResetBits' [-Wimplicit-function-declaration]
+         GPIO_ResetBits(GPIOA, GPIO_Pin_5); // zgaszenie diody
+         ^~~~~~~~~~~~~~
+
+09:58:43 Build Finished (took 1s.295ms)
+

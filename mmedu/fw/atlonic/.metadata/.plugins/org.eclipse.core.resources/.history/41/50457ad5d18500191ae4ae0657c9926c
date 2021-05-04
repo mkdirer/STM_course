@@ -1,0 +1,18 @@
+/*
+ * START.cpp
+ *
+ *  Created on: 03.06.2019
+ *      Author: Ja
+ */
+
+#include <START.h>
+
+START::START() {
+	// TODO Auto-generated constructor stub
+
+}
+
+START::~START() {
+	// TODO Auto-generated destructor stub
+}
+

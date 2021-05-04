@@ -1,0 +1,3 @@
+aio.c:12:6:OUT_ANA_Config	32	static
+aio.c:47:6:IN_ANA_Config	120	static
+aio.c:127:11:returnADC	4	static

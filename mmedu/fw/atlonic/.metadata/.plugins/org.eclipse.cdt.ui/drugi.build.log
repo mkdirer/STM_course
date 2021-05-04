@@ -1,0 +1,68 @@
+13:32:51 **** Incremental Build of configuration Debug for project drugi ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\src\main.c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DSTM32F303xE -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../src -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -o src\main.o 
+..\src\main.c: In function 'main':
+..\src\main.c:48:3: warning: implicit declaration of function 'RCC_BackupAccessCmd' [-Wimplicit-function-declaration]
+   RCC_BackupAccessCmd(ENABLE);
+   ^~~~~~~~~~~~~~~~~~~
+..\src\main.c:49:3: warning: implicit declaration of function 'NVIC_Connf' [-Wimplicit-function-declaration]
+   NVIC_Connf();
+   ^~~~~~~~~~
+..\src\main.c:50:3: warning: implicit declaration of function 'GPIO_CONF' [-Wimplicit-function-declaration]
+   GPIO_CONF();
+   ^~~~~~~~~
+..\src\main.c:52:3: warning: implicit declaration of function 'RCC_APB1PeriphClockCmd' [-Wimplicit-function-declaration]
+   RCC_APB1PeriphClockCmd(ENABLE);
+   ^~~~~~~~~~~~~~~~~~~~~~
+..\src\main.c:53:3: warning: implicit declaration of function 'PWR_BuckupAccessCmd' [-Wimplicit-function-declaration]
+   PWR_BuckupAccessCmd();
+   ^~~~~~~~~~~~~~~~~~~
+..\src\main.c:54:3: warning: implicit declaration of function 'BKP_ClearFlag' [-Wimplicit-function-declaration]
+   BKP_ClearFlag();
+   ^~~~~~~~~~~~~
+..\src\main.c:56:6: warning: implicit declaration of function 'RCC_GetFlagStatus' [-Wimplicit-function-declaration]
+   if(RCC_GetFlagStatus(RCC_FLAG_PORRST)!=RESET){
+      ^~~~~~~~~~~~~~~~~
+..\src\main.c:56:24: error: 'RCC_FLAG_PORRST' undeclared (first use in this function)
+   if(RCC_GetFlagStatus(RCC_FLAG_PORRST)!=RESET){
+                        ^~~~~~~~~~~~~~~
+..\src\main.c:56:24: note: each undeclared identifier is reported only once for each function it appears in
+..\src\main.c:57:4: warning: implicit declaration of function 'RCC_ClearFalg' [-Wimplicit-function-declaration]
+    RCC_ClearFalg();
+    ^~~~~~~~~~~~~
+..\src\main.c:58:7: warning: implicit declaration of function 'RCC_BackupRegister' [-Wimplicit-function-declaration]
+    if(RCC_BackupRegister(BKP_DR!)==0x1111)
+       ^~~~~~~~~~~~~~~~~~
+..\src\main.c:58:26: error: 'BKP_DR' undeclared (first use in this function)
+    if(RCC_BackupRegister(BKP_DR!)==0x1111)
+                          ^~~~~~
+..\src\main.c:58:32: error: expected ')' before '!' token
+    if(RCC_BackupRegister(BKP_DR!)==0x1111)
+                                ^
+..\src\main.c:59:4: warning: implicit declaration of function 'GPIO_SetBits' [-Wimplicit-function-declaration]
+    GPIO_SetBits(GPIOC, GPIO_Pin_6);
+    ^~~~~~~~~~~~
+..\src\main.c:59:24: error: 'GPIO_Pin_6' undeclared (first use in this function)
+    GPIO_SetBits(GPIOC, GPIO_Pin_6);
+                        ^~~~~~~~~~
+..\src\main.c:61:24: error: 'GPIO_Pin_7' undeclared (first use in this function)
+    GPIO_SetBits(GPIOC, GPIO_Pin_7);
+                        ^~~~~~~~~~
+..\src\main.c:67:8: warning: implicit declaration of function 'delay_ms' [-Wimplicit-function-declaration]
+        delay_ms(2000);
+        ^~~~~~~~
+..\src\main.c:68:8: warning: implicit declaration of function 'BKP_WriteBackupRegister' [-Wimplicit-function-declaration]
+        BKP_WriteBackupRegister(BKP_DR2, i++);
+        ^~~~~~~~~~~~~~~~~~~~~~~
+..\src\main.c:68:32: error: 'BKP_DR2' undeclared (first use in this function)
+        BKP_WriteBackupRegister(BKP_DR2, i++);
+                                ^~~~~~~
+..\src\main.c:68:41: error: 'i' undeclared (first use in this function)
+        BKP_WriteBackupRegister(BKP_DR2, i++);
+                                         ^
+..\src\main.c:47:12: warning: unused variable 'ii' [-Wunused-variable]
+   uint32_t ii = 0;
+            ^~
+
+13:32:52 Build Finished (took 1s.284ms)
+

@@ -1,0 +1,17 @@
+/*
+ * stm32f30x.h
+ *
+ *  Created on: 03.06.2019
+ *      Author: Ja
+ */
+
+#ifndef STM32F3XX_HAL_DRIVER_INC_STM32F30X_H_
+#define STM32F3XX_HAL_DRIVER_INC_STM32F30X_H_
+
+class stm32f30x {
+public:
+	stm32f30x();
+	virtual ~stm32f30x();
+};
+
+#endif /* STM32F3XX_HAL_DRIVER_INC_STM32F30X_H_ */

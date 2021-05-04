@@ -1,0 +1,17 @@
+#
+#Thu Jun 06 14:38:36 CEST 2019
+Debug/Src/stm32f3xx_hal_msp.o=1
+Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c=1
+Src/stm32f3xx_hal_msp.c=1
+Debug/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o=1
+pomiar_temp.elf=1
+Debug/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o=1
+Debug/pomiar_temp.elf=1
+Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c=1
+Debug/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.o=1
+Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c=1
+Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c=1
+Debug/Src/main.o=1
+Debug/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.o=1
+Debug/pomiar_temp=1
+Src/main.c=1

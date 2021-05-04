@@ -1,0 +1,137 @@
+/**
+  ******************************************************************************
+  * @file    main.c
+  * @author  Ac6
+  * @version V1.0
+  * @date    01-December-2013
+  * @brief   Default main function.
+  ******************************************************************************
+*/
+
+#include "stm32f30x.h"
+#include "rcc.h"
+#include "nvic.h"
+#include "runtime.h"
+#include "usb.h"
+#include "io.h"
+#include "stepdir.h"
+#include "aio.h"
+#include "rs232.h"
+#include "encoder.h"
+//USB functions
+
+void send_char(char c)
+{
+ while (USART_GetFlagStatus(USART2, USART_FLAG_TXE) == RESET);
+ USART_SendData(USART2, c);
+}
+
+void send_string(const char* s)
+{
+ while (*s)
+ send_char(*s++);
+}
+void send_int(int a)
+{   a=0;
+	a=a++;
+
+
+}
+
+
+//MAIN
+int main(void)
+{
+//Config all
+	RCC_Config();
+	NVIC_Config();
+	RUNTIME_Config();
+	STEPDIR_Config();
+	ENCODER_Config();
+	OUT_DIG_Config();
+	IN_DIG_Config();
+	IN_ANA_Config();
+	OUT_ANA_Config();
+	usbInit();
+	RS232_Config();
+
+	while(1)
+	{
+		//X1
+		if(GPIO_ReadInputDataBit(GPIOC,GPIO_Pin_1))
+		{
+
+		}
+		//X2
+		if(GPIO_ReadInputDataBit(GPIOC,GPIO_Pin_0))
+		{
+
+		}
+		//X3
+		if(GPIO_ReadInputDataBit(GPIOC,GPIO_Pin_13))
+		{
+
+		}
+		//X4
+		if(GPIO_ReadInputDataBit(GPIOC,GPIO_Pin_4))
+		{
+
+		}
+		//X5
+		if(GPIO_ReadInputDataBit(GPIOC,GPIO_Pin_5))
+		{
+
+		}
+		//X6
+		if(GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_9))
+		{
+
+		}
+		//X7
+		if(GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_8))
+		{
+
+		}
+		//X8
+		if(GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_7))
+		{
+
+		}
+		//X9
+		if(GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_6))
+		{
+
+		}
+		//X10
+		if(GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_3))
+		{
+
+		}
+		//X11
+		if(GPIO_ReadInputDataBit(GPIOD,GPIO_Pin_2))
+		{
+
+		}
+		//X12
+		if(GPIO_ReadInputDataBit(GPIOC,GPIO_Pin_12))
+		{
+
+		}
+		//X13
+		if(GPIO_ReadInputDataBit(GPIOC,GPIO_Pin_11))
+		{
+
+		}
+		//X14
+		if(GPIO_ReadInputDataBit(GPIOC,GPIO_Pin_10))
+		{
+
+		}
+
+	}
+}
+
+
+
+
+

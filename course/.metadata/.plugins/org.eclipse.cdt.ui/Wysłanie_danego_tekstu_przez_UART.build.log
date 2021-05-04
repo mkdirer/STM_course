@@ -1,0 +1,6 @@
+19:38:17 **** Incremental Build of configuration Debug for project Wys³anie_danego_tekstu_przez_UART ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+
+19:38:18 Build Finished (took 425ms)
+

@@ -1,0 +1,23 @@
+23:02:45 **** Incremental Build of configuration Debug for project Przerwanie ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Lukas\workspace\Przerwanie\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER -I"C:/Users/Lukas/workspace/Przerwanie/HAL_Driver/Inc/Legacy" -I"C:/Users/Lukas/workspace/Przerwanie/Utilities/STM32F1xx_Nucleo" -I"C:/Users/Lukas/workspace/Przerwanie/inc" -I"C:/Users/Lukas/workspace/Przerwanie/CMSIS/device" -I"C:/Users/Lukas/workspace/Przerwanie/CMSIS/core" -I"C:/Users/Lukas/workspace/Przerwanie/HAL_Driver/Inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: Przerwanie.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -T"C:/Users/Lukas/workspace/Przerwanie/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Przerwanie.elf" @"objects.list"   -lm
+Finished building target: Przerwanie.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Przerwanie.elf" "Przerwanie.bin"
+arm-none-eabi-size "Przerwanie.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2812	   1096	   1604	   5512	   1588	Przerwanie.elf
+ 
+
+23:02:47 Build Finished (took 1s.980ms)
+
